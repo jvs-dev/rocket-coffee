@@ -44,6 +44,9 @@
     display: none;
     margin: 40px 0px;
 }
+.button__arrow {
+    display: none;
+}
 
 .header__menutoggle {
     display: none;
@@ -61,7 +64,13 @@
 
 @media screen and (max-width: 750px) {
     .button--mobile {
+        display: flex;
+        align-items: center;
+    }
+    .button__arrow {
         display: revert;
+        height: 100%;
+        margin-left: 10px;
     }
 
     .button--desktop {
