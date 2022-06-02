@@ -1,0 +1,42 @@
+.blur {
+    height: 92vh;
+    width: fit-content;
+    position: absolute;
+    z-index: -2;
+}
+
+.blur--left {
+    left: 0;
+    bottom: 0;
+}
+
+.blur--right {
+    right: 0;
+    top: 0;
+}
+
+.blur--mobile {
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-center-blur {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .blur--left {
+        display: none;
+    }
+
+    .blur--right {
+        display: none;
+    }
+
+    .bottom-center-blur {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+}

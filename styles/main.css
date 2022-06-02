@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__tittle {
+    font-size: 11vh;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.tittle__span {
+    color: var(--backgrond);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.main__text {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .main__tittle {
+        font-size: 10vw;
+    }
+
+    .main__text {
+        display: revert;
+        text-align: center;
+        color: var(--text-color);
+        font-size: 30px;
+        font-weight: 400;
+        padding: 0px 35px;
+        margin-top: 20px;
+    }
+}

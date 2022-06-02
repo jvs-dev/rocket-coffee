@@ -1,0 +1,24 @@
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Manrope', sans-serif;
+  overflow-y: hidden;
+  background-color: var(--backgrond);
+  margin: 0px;
+  padding: 6vh 0px 0px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0px;
+  }
+}
